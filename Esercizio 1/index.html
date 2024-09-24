@@ -3,16 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="esercizi html">
-    <meta name="author" content="Pasqualino Cerra">
-    <title>Esercizio 1</title>
-        
+    <title>Modulo di Checkout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h2>Checkout</h2>
+        <form action="/checkout" method="POST">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="300" height="300">
-        <polygon points="50,15 61,35 82,35 66,50 71,72 50,60 29,72 34,50 18,35 39,35" fill="yellow" stroke="black" stroke-width="2"/>
-    </svg>
-    
+            <label for="indirizzo">Indirizzo</label>
+            <input type="text" id="indirizzo" name="indirizzo" placeholder="Inserisci il tuo indirizzo" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+
+            <label for="telefono">Telefono</label>
+            <input type="text" id="telefono" name="telefono" placeholder="Inserisci il tuo numero di telefono" required>
+
+            <label for="carta">Numero Carta di Credito</label>
+            <input type="number" id="carta" name="carta" placeholder="Inserisci il numero della carta" required>
+
+            <label for="scadenza">Data di Scadenza</label>
+            <input type="text" id="scadenza" name="scadenza" placeholder="MM/AA" required>
+
+            <label for="cvv">CVV</label>
+            <input type="number" id="cvv" name="cvv" placeholder="Inserisci il CVV" required>
+
+            <button type="submit">Paga ora</button>
+        </form>
+    </div>
 </body>
 </html>
