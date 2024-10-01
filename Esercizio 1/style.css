@@ -1,0 +1,17 @@
+/* Stile per il div contenitore */
+#contenitore {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Stile per i div interni */
+.box {
+    margin-bottom: 20px;
+}
+
+/* Stile per i paragrafi per allinearli orizzontalmente */
+.box p {
+    display: inline-block;
+    margin-right: 10px;
+}
