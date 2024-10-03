@@ -1,3 +1,18 @@
-.provacss {
+.h1 {
+    background-color: blue;
+}
+
+.color {
+    color: rgb(19, 23, 19);
+}
+
+.font {
     font-size: 30px;
+}
+
+.border {
+    border: 15px white;
+    padding: 60px 60px;
+    text-align: center;
+    border-radius: 30px;
 }
