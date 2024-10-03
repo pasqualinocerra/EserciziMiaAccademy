@@ -1,5 +1,23 @@
-p{
+h1 {
     color: blue;
+}
 
-    text-align: right;
+h2 {
+    color: brown;
+}
+
+h3 {
+    color: aqua;
+}
+
+h4 {
+    color: blueviolet;
+}
+
+h5 {
+    color: blanchedalmond;
+}
+
+h6 {
+    color: chocolate;
 }
