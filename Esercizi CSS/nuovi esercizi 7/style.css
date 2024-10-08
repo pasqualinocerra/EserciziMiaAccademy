@@ -1,0 +1,24 @@
+span {
+    background-color: red;
+    border: 13px solid yellow;
+    width: 50%;
+    height: 50%;
+    
+}
+
+.span1 {
+    visibility: hidden;
+    
+}
+
+.span2 {
+    display: inline-block;
+   
+}
+
+.span3 {
+    display: block;
+
+}
+    
+
