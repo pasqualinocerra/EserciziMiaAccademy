@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.header {
+    background-color: grey;
+    text-align: center;
+    padding: 20px;
+}
+
+.nav {
+    background-color: black;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.colonne {
+    
+    background-color: grey;
+    padding: 45px;
+}
+
+.colonna {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    
+  
+  
+}
