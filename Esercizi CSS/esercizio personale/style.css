@@ -1,0 +1,68 @@
+body {
+    display: inline-flex;
+}
+
+.card{
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 20%;
+    border-radius: 10px;
+    
+}
+
+#card-jeep{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+
+.card__body {
+    padding: 12px;
+    
+}
+
+.card .card__body .card-tag{
+    color: white;
+    background-color: rgb(60, 232, 232);
+    border-radius: 10px;
+    padding: 3px 5px ;
+    font-size: 10px;
+}
+
+.card__body img{
+    border-radius: 50%;
+    display: flex;
+    
+}
+
+
+h2 {
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-size: 12px;
+}
+
+
+.footer {
+    display: flex;
+    height: 40px;
+    padding-top: 50px;
+}
+
+.card-body-img {
+    padding: 4px;
+}
+
+.card-body-userinfo {
+    position: relative;
+    margin-left: 15px;
+}
+
+
+
+

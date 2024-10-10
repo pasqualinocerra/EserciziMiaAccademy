@@ -1,24 +1,35 @@
-span {
+.container {
+    display: flex;
     background-color: red;
-    border: 13px solid yellow;
-    width: 50%;
-    height: 50%;
+    justify-content: center;
+    margin: 4px;
+    padding: 50px;
+}
+
+
+
+
+.box {
+    border: 8px solid blue;
+    display: flex;
+    width: 100px;
+    height: 90px;
+    background-color: aquamarine;
+    border-radius: 40px;
+    margin: 4px;
+    padding: 50px;
+
     
 }
 
-.span1 {
-    visibility: hidden;
-    
-}
+p {
+    background-color: rebeccapurple;
+    border-radius: 40px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 30px;
 
-.span2 {
-    display: inline-block;
-   
-}
-
-.span3 {
-    display: block;
-
-}
     
 
+    
+}
