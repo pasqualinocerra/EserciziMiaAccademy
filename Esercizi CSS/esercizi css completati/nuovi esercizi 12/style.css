@@ -1,0 +1,10 @@
+nav {
+    position: fixed;
+    top: 0;
+    background-color: blue;
+    font-size: 100px;
+}
+
+p {
+    font-size: 400px;
+}
