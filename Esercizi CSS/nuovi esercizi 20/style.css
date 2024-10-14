@@ -1,7 +1,0 @@
-:root {
-    --spacing-medium: 40px; 
-}
-
-p{
-    padding: var(--spacing-medium);
-}
