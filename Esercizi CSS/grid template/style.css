@@ -1,0 +1,15 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    border: 15px solid black;
+    width: 60%;
+    height: 300px;
+}
+
+.item {
+    background-color: yellow;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+}
