@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    background-color: pink;
+    width: 400px;
+    height: 400px;
+    
+}
+
+.item1 {
+    background-color: blue;
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.item2 {
+    background-color: blue;
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.item3 {
+    flex-shrink: 0;
+    background-color: blue;
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.item4 {
+    background-color: blue;
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.item5 {
+    background-color: blue;
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.item6 {
+    background-color: blue;
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+}
