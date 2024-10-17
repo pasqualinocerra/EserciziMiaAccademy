@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    background-color: pink;
+    width: 800px;
+    height: 200px;
+    
+}
+
+.item1 {
+    background-color: blue;
+    margin: 20px;
+    width: 300px;
+    
+}
+
+.item2 {
+    flex-basis: 100px;
+    background-color: blue;
+    margin: 20px;
+    width: 300px;
+   
+}
+
+.item3 {
+    background-color: blue;
+    margin: 20px;
+    width: 300px;
+    
+}
