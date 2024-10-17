@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    background-color: pink;
+    width: 900px;
+    height: 600px;
+    
+}
+
+.item1 {
+    align-self: center;
+    background-color: blue;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.item2 {
+    background-color: blue;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.item3 {
+    align-self: flex-end;
+    background-color: blue;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+}
