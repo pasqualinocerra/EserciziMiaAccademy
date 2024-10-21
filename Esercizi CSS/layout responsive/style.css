@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 600px) {
+    .titolo {
+      color: rgba(215, 0, 0, 0.747);
+    }
+  }
+
 .titolo {
     background-color: pink;
     border: 2px solid black;
