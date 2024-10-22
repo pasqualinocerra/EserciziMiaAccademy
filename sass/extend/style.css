@@ -1,0 +1,21 @@
+.navbar {
+  background-color: blue;
+  font-size: 30px;
+}
+.navbar .list, .navbar .contatti {
+  font-size: 45px;
+  color: rgb(0, 254, 38);
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.navbar .list li, .navbar .contatti li {
+  margin: 25px;
+}
+
+.contatti {
+  background-color: #ec1010;
+  border-color: #333333;
+}
+
+/*# sourceMappingURL=style.css.map */

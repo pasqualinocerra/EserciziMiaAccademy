@@ -1,0 +1,29 @@
+$mycolor: #ec1010;
+$myborder: #333333;
+
+
+.navbar {
+    background-color: blue;
+    font-size: 30px;
+
+    .list {
+        font-size: 45px;
+        color: rgb(0, 254, 38);
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+
+        li {
+            margin: 25px;
+        }
+
+      }
+      
+}
+ 
+.contatti {
+
+    @extend .list ;
+    background-color: #ec1010;
+    border-color: #333333;
+}
