@@ -1,0 +1,26 @@
+.navbar {
+  background-color: blue;
+  font-size: 30px;
+}
+.navbar .list {
+  font-size: 45px;
+  color: rgb(0, 254, 38);
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.navbar .list li {
+  margin: 25px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.container1 {
+  width: 20%;
+}
+
+/*# sourceMappingURL=style.css.map */

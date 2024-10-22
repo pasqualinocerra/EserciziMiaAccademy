@@ -1,0 +1,29 @@
+.navbar {
+    background-color: blue;
+    font-size: 30px;
+
+    .list {
+        font-size: 45px;
+        color: rgb(0, 254, 38);
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+
+        li {
+            margin: 25px;
+        }
+
+      }
+      
+}
+ 
+div {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+
+.container1 {
+    width: (60% / 3);
+}
