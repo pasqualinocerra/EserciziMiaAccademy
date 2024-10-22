@@ -1,0 +1,12 @@
+$myfontsize: 20px;
+$mycolor: red;
+
+.container  {
+    .colore {
+        color: $mycolor;
+        background-color: blue;
+    }
+    .dimensione {
+        font-size: $myfontsize;
+    }
+}
