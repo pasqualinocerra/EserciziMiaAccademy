@@ -1,0 +1,19 @@
+$light-colors: (
+  #62daed
+);
+
+$dark-colors: (
+  #630000
+);
+
+@for $i from 1 through 2 {
+    .container#{$i} {
+      background-color: #62daed;
+   }
+  }
+
+  @for $i from 2 through 2 {
+    .container#{$i} {
+      background-color: #630000;
+   }
+  }
