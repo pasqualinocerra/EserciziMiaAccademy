@@ -1,0 +1,14 @@
+$noHover:false;
+
+.navbar {
+    background-color: burlywood;
+    color: black;
+    
+    @if $noHover == false {
+        &:hover {
+        background-color: blue;
+        color: white;
+        }
+    }
+}
+

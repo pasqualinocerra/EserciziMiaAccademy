@@ -1,0 +1,10 @@
+.navbar {
+  background-color: burlywood;
+  color: black;
+}
+.navbar:hover {
+  background-color: blue;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
