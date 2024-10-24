@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.light-theme {
+padding-bottom: 40px;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    li {
+        margin: 30px;
+    }
+}
+
+.dark-theme {
+    padding-top: 40px;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    li {
+        margin: 30px;
+    }
+}
+
+@mixin light {
+    background-color:  #e7e7e7;
+}
+
+@mixin dark {
+    background-color: #000000;
+    color: white;
+    ul :hover {
+        color: yellow;
+    }
+}
+
+.light-theme {
+    @include light;
+}
+
+.dark-theme {
+    @include dark;
+}
