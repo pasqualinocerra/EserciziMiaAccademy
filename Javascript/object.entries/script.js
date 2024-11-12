@@ -4,8 +4,14 @@ const student = {
     grade : 'professore',
     school : 'universtà'
  }
- student.forEach(function(key,value) {
-    console.log(key + value)
- });
- console.log(Object.entries(student))
+
+ const lista = Object.entries(student);
+ 
+ console.log(lista)
+ 
+
+lista.forEach((chiave , valore) => {
+   console.log( `${chiave}: ${valore}`
+    )})
+
 
