@@ -10,7 +10,7 @@ const student = {
  console.log(lista)
  
 
-lista.forEach((chiave , valore) => {
+lista.forEach(([chiave , valore]) => {
    console.log( `${chiave}: ${valore}`
     )})
 
