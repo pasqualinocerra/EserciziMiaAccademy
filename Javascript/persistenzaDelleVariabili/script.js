@@ -9,3 +9,6 @@ function outerFunction(x , initialValue) {
 }
 
 let risultato = outerFunction(6,8);
+
+
+console.log(risultato)
