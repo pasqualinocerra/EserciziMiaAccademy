@@ -7,3 +7,4 @@ function outerFunction(x) {
 }
 
 let risultato = outerFunction(6);
+
