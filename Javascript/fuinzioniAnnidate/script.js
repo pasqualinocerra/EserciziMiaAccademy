@@ -8,3 +8,4 @@ function outerFunction(x) {
 
 let risultato = outerFunction(6);
 
+console.log(risultato)
