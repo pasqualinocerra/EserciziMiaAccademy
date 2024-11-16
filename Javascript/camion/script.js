@@ -1,0 +1,82 @@
+class Automobile {
+    marca=''
+    modello=''
+    anno=''
+    chilometraggio=0
+    #contatoreChiamate=0
+
+    constructor (marca,modello,anno,chilometraggio,){
+        this.marca=marca
+        this.modello=modello
+        this.anno=anno
+        this.chilometraggio=chilometraggio
+        this.#contatoreChiamate=this.#contatoreChiamate
+    }
+
+    get chilometraggioAttuale(){
+        return this.chilometraggio;
+    }
+
+    set nuovoValore(valore){
+        
+        if (valore >= 20000) {
+            console.log('chilometraggio superiore a 20000Km')
+        } 
+        else if (valore < 20000)
+        console.log('chilometraggio inferiore a 20000km')
+    }
+
+    #incrementaContatore(){
+        this.#contatoreChiamate++
+    }
+
+    aggiungiChilometri(Km){
+       this.chilometraggio = this.chilometraggio + Km;
+       return this.#incrementaContatore
+    }
+
+    mostraContatoreChiamate(){
+        return aggiungiChilometri();
+    }
+
+    mostraChilometraggio(){
+        return this.chilometraggio;
+    }
+
+    descrizione(){
+        console.log(`questa auto è ${this.marca},il modello è ${this.modello}.E' stata prodotta nel ${this.anno}`)
+    };
+
+    #calcolaEtà(){
+      let età = 2024-this.anno;
+      return età
+    }
+
+     mostraEtà(){
+        return this.#calcolaEtà();
+    }
+}
+
+let auto = new Automobile('fiat','punto',1990,20000);
+
+auto.nuovoValore = 30000;
+
+console.log(auto.mostraEtà())
+
+console.log(auto.chilometraggioAttuale)
+
+
+
+
+ Automobile.prototype.saluta = function(){
+    return `ciao, questa auto è una ${this.marca},modello ${this.modello}`;
+ }
+
+ auto.descrizione();
+
+
+ console.log(auto.saluta())
+
+class Camion extends Automobile(){
+    
+}
