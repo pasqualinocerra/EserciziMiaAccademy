@@ -4,8 +4,6 @@ let persona = {
     età: 50
 }
 
-let nome1 = persona.nome;
-let cognome1 = persona.cognome;
-let età1 = persona.età;
+let {nome : name ,cognome : secondoCognome, età : age} = persona
 
-console.log(nome1,cognome1,età1)
+console.log(name,secondoCognome,age)
