@@ -1,8 +1,8 @@
 let obj = {
-    indirizzo : '',
+    indirizzo : 'roma',
     numeroCivico : 40,
 }
 
-let {indirizzo=0 , numeroCivico}= obj;
+let {indirizzo, numeroCivico,paese = 'italia'}= obj;
 
-console.log(indirizzo,obj)
+console.log(indirizzo,obj,paese)
