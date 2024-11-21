@@ -1,9 +1,8 @@
 function argomenti(...argomentazione) {
     
-    return argomentazione
+    return argomentazione.reduce((acc, curr) => acc + curr, 0);
 }
-
-let totale = argomenti('luigi','rossi','milano','lombardia','italia');
+let totale = argomenti(10,40);
 
 console.log(totale)
 
