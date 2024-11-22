@@ -1,14 +1,11 @@
-let list = ['{"mario":"rossi","giovanni":"rossini","nicola":"azzurro","luigi":"viola"}'];
+let list=['{"mario":"rossi","giovanni":"rossini"}'];
 
 let newList = JSON.parse(list)
 
-let NewList = [{"marco":"biaco"}];
+newList = Object.entries(newList);
 
-list.push(NewList)
+newList.push(["nicola" , "bianco"])
 
-listJson = JSON.stringify(list)
+let NewList = JSON.stringify(newList)
 
-console.log(listJson)
-
-
-
+console.log(NewList)
