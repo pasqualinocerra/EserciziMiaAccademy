@@ -1,21 +1,20 @@
-function string(stringa) {
-
+function testo(input) {
     try {
-        if (stringa === 0) {
+        if (typeof input !== 'string') {
+            throw new TypeError('L input deve essere una stringa!');
         }
 
-        else if(stringa === 5){
+        let risultato = input.toUpperCase();
+        console.log('Risultato:', risultato);
+        return risultato;
 
+    } catch (errore) {
+        if (errore instanceof TypeError) {
+            console.error('Errore di tipo:', errore.message);
+        } else {
+            console.error('Errore generico:', errore.message);
         }
-
-        return stringa
-    } catch (error) {
-        
-        console.log('Errore,non è una stringa')
     }
-    
 }
 
-const result = string()
-
-console.log(result)
+let risultato = testo(5)
