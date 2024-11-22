@@ -1,7 +1,5 @@
-let persona = `${'giovanni'},${'rossini'}`;
-
-let nome = `${'giovanni'}`;
-let cognome = `${'rossini'}`;
+let nome = 'giovanni';
+let cognome ='rossini';
 
 let newPersona = `${nome} ${cognome}` ;
 
