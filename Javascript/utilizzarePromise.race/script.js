@@ -24,7 +24,7 @@ function value() {
     })
 }
 
-Promise.all([numbers(),value()])
+Promise.race([numbers(),value()])
 .then((risultato)=>{
     console.log(risultato)
 })
