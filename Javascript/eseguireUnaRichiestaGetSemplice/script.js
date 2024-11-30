@@ -1,13 +1,13 @@
 fetch('https://randomuser.me/api/')
-.then((Response)=>{
-    if (!Response.ok) {
+.then((response)=>{
+    if (!response.ok) {
         throw new Error("errore");
     }
-    return Response.json()
+    return response.json()
 })
 
 .then((dati)=>{
-    console.log(dati)
+    console.log('DATI STAMPATI', dati)
 })
 
 .catch((error)=>{
