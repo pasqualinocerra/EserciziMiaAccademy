@@ -1,11 +1,14 @@
 function risultato(){
     return new Promise((resolve, reject) => {
         const ok = true;
-        if (ok) {
-            resolve('operazione riuscita')
-        } else {
-            reject('operazione non riuscita')
-        }
+        setTimeout(() => {
+            if (ok) {
+                resolve('operazione riuscita')
+            } else {
+                reject('operazione non riuscita')
+            }
+        }, 2000);
+        
     })
 }
 
