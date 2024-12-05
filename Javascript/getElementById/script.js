@@ -1,1 +1,1 @@
-const paragrafo = document.getElementById('#par')
+const paragrafo = document.getElementById('par')
