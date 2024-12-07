@@ -1,0 +1,22 @@
+.container {
+    margin: 200px 600px;
+    border: 2px solid black;
+    width: 280px;
+    background-color: aquamarine;
+    border-radius: 20px;
+}
+
+#nome {
+    margin: 8px;
+    font-size: 15px;
+}
+
+#cognome {
+    margin: 8px;
+    font-size: 15px;
+}
+
+.btn {
+    margin: 50px;
+    font-size: 40px;
+}
