@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primoColore: '#49beb7',
+                        secondoColore: '#a21caf',
+                        spacing: {
+                            '20': '40px',
+                            '30': '60px',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="bg-primoColore">
+        <h1 class="text-secondoColore text-5xl px-10 m-30">titolo</h1>
+    </div>
+</body>
+
+</html>
