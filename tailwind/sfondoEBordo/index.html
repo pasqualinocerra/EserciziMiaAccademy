@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primoColore: '#49beb7',
+                        secondoColore: '#a21caf',
+                        terzoColore : '#334155',
+                        quartoColore :'#fecaca',
+
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <body>
+
+        <div class="max-w-sm mx-auto bg-primoColore border-4 border-secondoColore rounded-lg p-6 shadow-lg">
+          <h2 class="text-white text-2xl font-semibold">Card con sfondo blu e bordo verde</h2>
+          <p class="text-white mt-2">Questo è un esempio di card con uno sfondo blu e un bordo verde.</p>
+        </div>
+      
+        <div class="max-w-sm mx-auto bg-terzoColore border-4 border-quartoColore rounded-lg p-6 shadow-lg mt-6">
+          <h2 class="text-white text-2xl font-semibold">Card con sfondo rosso e bordo blu</h2>
+          <p class="text-white mt-2">Questo è un esempio di card con uno sfondo rosso e un bordo blu.</p>
+        </div>
+      
+        <div class="max-w-sm mx-auto bg-primoColore border-4 border-terzoColore rounded-lg p-6 shadow-lg mt-6">
+          <h2 class="text-white text-2xl font-semibold">Card con sfondo verde e bordo rosso</h2>
+          <p class="text-white mt-2">Questo è un esempio di card con uno sfondo verde e un bordo rosso.</p>
+        </div>
+</body>
+</html>
