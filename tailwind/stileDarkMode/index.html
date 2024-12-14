@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+         tailwind.config = {
+            darkMOde : 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primoColore: '#49beb7',
+                        secondoColore: '#a21caf',
+                        terzoColore : '#334155',
+                        quartoColore :'#fecaca',
+
+                    }
+                }
+            }
+         }
+    </script>
+</head>
+<body>
+    <div class="dark: bg-gray-800 dark: text-white p-4">
+        questo sfondo sarà scuro con il testo bianco!!
+    </div>
+    <div class="bg-gray-100 text-black p-4">
+        a questo sfondo non sarà presente la dark mode !!
+    </div>
+</body>
+</html>
