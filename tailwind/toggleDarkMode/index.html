@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+         tailwind.config = {
+            darkMode : 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primoColore: '#49beb7',
+                        secondoColore: '#a21caf',
+                        terzoColore : '#334155',
+                        quartoColore :'#fecaca',
+
+                    }
+                }
+            }
+         }
+    </script>
+</head>
+<body>
+    <div class="dark: bg-gray-800 dark: text-white p-4">
+        questo sfondo sarà scuro con il testo bianco!!
+    </div>
+    <div class="bg-gray-100 text-black p-4">
+        a questo sfondo non sarà presente la dark mode !!
+    </div>
+    <div class="p-4">
+        <button id="darkModeToggle" class="border px-4 py-1 cursor-pointer">Dark Mode : <span id="darkModeStatus">Inactive</span></button>
+    </div>
+    <script>
+        const toggleDarkMode = () => {
+            document.body.classList.toggle('dark');
+            document.querySelector('#darkModeStatus').innerHTML = document.body.classList.contains('dark') ? 'active' : 'inactive';
+        }
+        document.querySelector('#darkModeToggle').addEventListener('click',toggleDarkMode);
+    </script>
+</body>
+</html>
