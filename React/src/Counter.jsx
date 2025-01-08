@@ -10,12 +10,19 @@ function Counter() {
        })
     }
 
+    const decrement = () => {
+        setCounter((_counter) => {
+        return _counter - 1;
+        })
+    }
+
     return (
       <>
        <div>
         Count : {counter}
        </div>
-       <button onClick={increment}>PUSH</button>
+       <button onClick={increment}>INCREMENT</button><br/>
+       <button onClick={decrement}>DECREMENT</button>
       </>
     )
   }
