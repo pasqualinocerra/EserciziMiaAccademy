@@ -1,11 +1,13 @@
 import Counter from "./counter"
+import TextInput from "./components/TextInput"
 
 function App() {
 
 
   return (
     <>
-     <Counter/>
+     {/* <Counter/> */}
+     <TextInput/>
     </>
   )
 }
