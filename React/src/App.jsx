@@ -1,5 +1,6 @@
 import Counter from "./counter"
 import TextInput from "./components/TextInput"
+import LoginForm from "./components/LoginForm"
 
 function App() {
 
@@ -7,7 +8,8 @@ function App() {
   return (
     <>
      {/* <Counter/> */}
-     <TextInput/>
+     {/* <TextInput/> */}
+     <LoginForm/>
     </>
   )
 }
