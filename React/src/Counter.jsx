@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 
 function Counter() {
 
@@ -21,6 +21,10 @@ function Counter() {
         return _counter = 0;
         })
     }
+
+    useEffect(() => {
+         document.title = counter;
+    }, [counter])
 
     return (
       <>
