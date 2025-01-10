@@ -1,6 +1,7 @@
 import Counter from "./counter"
 import TextInput from "./components/TextInput"
 import LoginForm from "./components/LoginForm"
+import UnControlloDInput from "./components/UnControlloDInput"
 
 function App() {
 
@@ -9,7 +10,8 @@ function App() {
     <>
      {/* <Counter/> */}
      {/* <TextInput/> */}
-     <LoginForm/>
+     {/* <LoginForm/> */}
+     {<UnControlloDInput/>}
     </>
   )
 }
