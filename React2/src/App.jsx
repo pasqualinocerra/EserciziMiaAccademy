@@ -1,11 +1,11 @@
-import UseFetch from "./assets/FetchData"
+import TodoList from "./assets/TodoList"
 
 const App = () => {
  
 
   return (
     <>
-      <UseFetch/>
+      <TodoList/>
     </>
   )
 }
