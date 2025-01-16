@@ -1,4 +1,4 @@
-import React, { useState,useCallback } from "react";
+import React, { useState,useCallback,useMemo } from "react";
 import useFetch from "react-fetch-hook";
 import { useFilteredTodos } from "./useFilteredTodos";
 
@@ -9,12 +9,18 @@ const TodoList = () => {
 
     const [filter, setFilter] = useState("");
 
-    const filteredTodos = useFilteredTodos(todos, filter);
-
     const handleFilterChange = useCallback((event) => {
         setFilter(event.target.value);
     }, []);
 
+    const filteredTodos = useMemo(() => {
+        if (!todos || filter === "") {
+            return todos || [];
+        }
+        return todos.filter((todo) =>
+            todo.title.toLowerCase().includes(filter.toLowerCase())
+        );
+    }, [todos, filter]);
 
     if (isLoading) {
         return <p>Caricamento in corso...</p>;
