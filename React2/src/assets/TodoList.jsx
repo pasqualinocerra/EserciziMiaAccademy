@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useCallback } from "react";
 import useFetch from "react-fetch-hook";
 import { useFilteredTodos } from "./useFilteredTodos";
 
@@ -11,6 +11,11 @@ const TodoList = () => {
 
     const filteredTodos = useFilteredTodos(todos, filter);
 
+    const handleFilterChange = useCallback((event) => {
+        setFilter(event.target.value);
+    }, []);
+
+
     if (isLoading) {
         return <p>Caricamento in corso...</p>;
     }
@@ -19,10 +24,6 @@ const TodoList = () => {
         return <p>Si è verificato un errore: {error.message}</p>;
     }
     
-    const handleFilterChange = (event) => {
-        setFilter(event.target.value);
-    };
-
     return (
         <>
             <div>
