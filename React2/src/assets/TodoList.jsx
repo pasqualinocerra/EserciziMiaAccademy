@@ -1,4 +1,4 @@
-import React, { useState,useCallback,useMemo } from "react";
+import React, { useState,useCallback,useMemo,useRef,useEffect } from "react";
 import useFetch from "react-fetch-hook";
 import { useFilteredTodos } from "./useFilteredTodos";
 
@@ -8,6 +8,14 @@ const TodoList = () => {
     );
 
     const [filter, setFilter] = useState("");
+
+     const inputRef = useRef(null);
+
+     useEffect(() => {
+         if (inputRef.current) {
+             inputRef.current.focus();
+         }
+     }, []);
 
     const handleFilterChange = useCallback((event) => {
         setFilter(event.target.value);
@@ -39,6 +47,7 @@ const TodoList = () => {
                     placeholder="Cerca tra i to-do"
                     value={filter}
                     onChange={handleFilterChange}
+                    ref={inputRef}
                 />
                 <ul>
                     {filteredTodos.map((todo) => (
