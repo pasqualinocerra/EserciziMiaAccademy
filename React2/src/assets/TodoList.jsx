@@ -1,24 +1,20 @@
-import React, { useState,useCallback,useMemo,useRef,useEffect } from "react";
+import React, { useMemo, useRef, useEffect, useContext } from "react";
 import useFetch from "react-fetch-hook";
-import { useFilteredTodos } from "./useFilteredTodos";
+import { TodoContext } from "./TodoProvider";
 
 const TodoList = () => {
     const { data: todos, isLoading, error } = useFetch(
         "https://jsonplaceholder.typicode.com/todos"
     );
 
-    const [filter, setFilter] = useState("");
+    const { filter, handleFilterChange } = useContext(TodoContext);
 
-     const inputRef = useRef(null);
+    const inputRef = useRef(null);
 
-     useEffect(() => {
-         if (inputRef.current) {
-             inputRef.current.focus();
-         }
-     }, []);
-
-    const handleFilterChange = useCallback((event) => {
-        setFilter(event.target.value);
+    useEffect(() => {
+        if (inputRef.current) {
+            inputRef.current.focus();
+        }
     }, []);
 
     const filteredTodos = useMemo(() => {
@@ -37,28 +33,26 @@ const TodoList = () => {
     if (error) {
         return <p>Si è verificato un errore: {error.message}</p>;
     }
-    
+
     return (
-        <>
-            <div>
-                <h1>Lista di To-Do</h1>
-                <input
-                    type="text"
-                    placeholder="Cerca tra i to-do"
-                    value={filter}
-                    onChange={handleFilterChange}
-                    ref={inputRef}
-                />
-                <ul>
-                    {filteredTodos.map((todo) => (
-                        <li key={todo.id}>
-                            <p>{todo.title}</p> -{" "}
-                            {todo.completed ? "Completato" : "Non completato"}
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        </>
+        <div>
+            <h1>Lista di To-Do</h1>
+            <input
+                type="text"
+                placeholder="Cerca tra i to-do"
+                value={filter}
+                onChange={handleFilterChange}
+                ref={inputRef}
+            />
+            <ul>
+                {filteredTodos.map((todo) => (
+                    <li key={todo.id}>
+                        <p>{todo.title}</p> -{" "}
+                        {todo.completed ? "Completato" : "Non completato"}
+                    </li>
+                ))}
+            </ul>
+        </div>
     );
 };
 

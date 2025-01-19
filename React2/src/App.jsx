@@ -1,11 +1,11 @@
-import TodoList from "./assets/TodoList"
+import TodoProvider from "./assets/TodoProvider"
 
 const App = () => {
  
 
   return (
     <>
-      <TodoList/>
+      <TodoProvider/>
     </>
   )
 }
