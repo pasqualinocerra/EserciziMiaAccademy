@@ -1,13 +1,8 @@
 import React, { useMemo, useRef, useEffect, useContext } from "react";
-import useFetch from "react-fetch-hook";
 import { TodoContext } from "./TodoProvider";
 
 const TodoList = () => {
-    const { data: todos, isLoading, error } = useFetch(
-        "https://jsonplaceholder.typicode.com/todos"
-    );
-
-    const { filter, handleFilterChange } = useContext(TodoContext);
+    const { todos, isLoading, error, filter, handleFilterChange } = useContext(TodoContext);
 
     const inputRef = useRef(null);
 
