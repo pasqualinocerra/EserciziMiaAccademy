@@ -13,6 +13,7 @@ const TodoDetails = ({ todos }) => {
             <h1>Dettagli del To-Do</h1>
             <p><strong>Testo:</strong> {todo.text}</p>
             <p><strong>Dettagli:</strong> {todo.details}</p>
+            <p>completed : {todo.completed.toString()}</p>
             <Link to="/">Torna alla lista</Link>
         </div>
     );
