@@ -4,6 +4,8 @@ import About from "./About"
 import Navbar from "./Navbar"
 import PublicLayout from "./PublicLayout"
 import TodoDetails from "./TodoDetails"
+import { Provider } from "react-redux"
+import store from "./store"
 
 const App = () => {
 
@@ -16,6 +18,7 @@ const App = () => {
 
   return (
     <>
+      <Provider store={store}>
       <Routes>
         <Route path="/" element={<PublicLayout />}>
           <Route path="/" element={<Home todos={todos} />} />
@@ -23,6 +26,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
         </Route>
       </Routes>
+      </Provider>
     </>
   )
 }
