@@ -1,6 +1,6 @@
 import React from "react";
-import TodoProvider from "./TodoProvider";
-import TodoList from "./TodoList";
+import TodoProvider from "./assets/TodoProvider";
+import TodoList from "./assets/TodoList";
 
 const App = () => {
     return (

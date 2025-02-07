@@ -11,13 +11,13 @@ function App() {
 
   return (
     <>
-     {/* <Counter/> */}
-     {/* <TextInput/> */}
-     {/* <LoginForm/> */}
-     {/* {<UnControlloDInput/>} */}
-     {/* {<ItemList list = {myList}/>} */}
+     {<Counter/>}
+     {<TextInput/>}
+     {<LoginForm/>} 
+     {<UnControlloDInput/>}
+     {<ItemList list = {myList}/>}
      <Card>
-      <h1>questo è il contenuto della card</h1>
+      <h1>questo è un sito web...!</h1>
      </Card>
     </>
   )
