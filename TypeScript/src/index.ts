@@ -3,6 +3,12 @@ import { Todo, User } from "./types";
 const todos: Todo[] = [];
 const users: User[] = [];
 
+const addTodo = (title: string, metadata?: any): Todo => {
+    const newTodo: Todo = { id: Date.now(), title, completed: false, metadata };
+    todos.push(newTodo);
+    return newTodo;
+  };
+
 const assignTodoToUser = (todoId: number, userId: number): boolean => {
     const todo = todos.find((t) => t.id === todoId);
     const user = users.find((u) => u.id === userId);
