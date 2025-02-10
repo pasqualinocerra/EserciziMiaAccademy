@@ -9,6 +9,14 @@ const addTodo = (title: string, metadata?: string | object): Todo => {
     return newTodo;
   };
 
+  const updateTodo = (id: number, updates: Partial<Todo>): Todo | undefined => {
+    const todo = todos.find((t) => t.id === id);
+    if (!todo) return undefined; 
+  
+    Object.assign(todo, updates); 
+    return todo;
+  };
+
 const assignTodoToUser = (todoId: number, userId: number): boolean => {
     const todo = todos.find((t) => t.id === todoId);
     const user = users.find((u) => u.id === userId);
