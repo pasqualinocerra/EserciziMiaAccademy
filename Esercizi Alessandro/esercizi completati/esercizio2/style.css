@@ -1,0 +1,33 @@
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0078d4; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #005bb5; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+    margin: 20px 0;
+}

@@ -1,0 +1,8 @@
+.elemento {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border: 2px solid blue; /* Il bordo che vogliamo nascondere */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Aggiunge ombra esterna per "sfumare" i bordi */
+  }
+  

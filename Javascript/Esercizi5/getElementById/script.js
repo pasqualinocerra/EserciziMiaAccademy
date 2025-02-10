@@ -1,0 +1,1 @@
+const paragrafo = document.getElementById('par')

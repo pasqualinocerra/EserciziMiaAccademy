@@ -1,0 +1,28 @@
+.containerPrincipale {
+    display: block;
+    gap: 10px;
+    margin-left: 440px;
+    width: 672px;
+    font-size: 16px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.container {
+    border: 1px solid black;
+    margin-bottom: 8px;
+    background-color: rgb(215, 215, 215);
+    border-radius: 10px;
+}
+
+
+p {
+    display: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(150, 149, 149);
+}
+
+h2 {
+    margin-left: 20px;
+}

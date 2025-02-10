@@ -20,3 +20,13 @@ const assignTodoToUser = (todoId: number, userId: number): boolean => {
   const error = (message: string): never => {
     throw new Error(message);
   };
+
+  const parseInput = (input: unknown): string => {
+    if (typeof input === "string") {
+      return input; 
+    } 
+    if (typeof input === "number") {
+      return input.toString(); 
+    } 
+    return error("Input non valido: deve essere una stringa o un numero.");
+  };

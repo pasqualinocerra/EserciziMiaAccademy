@@ -1,0 +1,1 @@
+const saluto = document.querySelector('.saluto')
