@@ -1,7 +1,16 @@
-import { Todo, User } from "./types";
+import { Todo, User, Project } from "./types";
 
 const todos: Todo[] = [];
 const users: User[] = [];
+
+const createProject = (name: string, users: User[], todos: Todo[]): Project => {
+    return {
+      id: Date.now(), 
+      name,
+      users,
+      todos,
+    };
+  };
 
 const addTodo = (title: string, metadata?: string | object): Todo => {
     const newTodo: Todo = { id: Date.now(), title, completed: false, metadata };
