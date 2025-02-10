@@ -12,3 +12,7 @@ const assignTodoToUser = (todoId: number, userId: number): boolean => {
     todo.userId = userId; 
     return true;
   };
+
+  const getUserTodos = (userId: number): Todo[] => {
+    return todos.filter((todo) => todo.userId === userId);
+  };
