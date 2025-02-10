@@ -17,6 +17,10 @@ const addTodo = (title: string, metadata?: string | object): Todo => {
     return todo;
   };
 
+  const getTodoSummary = (todo: Todo): [string, boolean] => {
+    return [todo.title, todo.completed];
+  };
+
 const assignTodoToUser = (todoId: number, userId: number): boolean => {
     const todo = todos.find((t) => t.id === todoId);
     const user = users.find((u) => u.id === userId);
