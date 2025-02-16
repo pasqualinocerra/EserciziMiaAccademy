@@ -26,6 +26,14 @@ const updateTodo = (id: number, updates: Partial<Todo>): Todo | undefined => {
     return todo;
   };
 
+const updateTodoStatus = (todoId: number, status: TodoStatus): Todo | undefined => {
+    const todo = todos.find((t) => t.id === todoId);
+    if (!todo) return undefined;
+    
+    todo.status = status;
+    return todo;
+};
+
 const getTodoSummary = (todo: Todo): [string, boolean] => {
     return [todo.title, todo.completed];
   };
