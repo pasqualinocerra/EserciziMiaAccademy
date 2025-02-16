@@ -1,4 +1,4 @@
-import { Todo, User, Project } from "./types";
+import { Todo, User, Project, TodoStatus } from "./types";
 
 const todos: Todo[] = [];
 const users: User[] = [];
@@ -13,12 +13,12 @@ const createProject = (name: string, users: User[], todos: Todo[]): Project => {
   };
 
 const addTodo = (title: string, metadata?: string | object): Todo => {
-    const newTodo: Todo = { id: Date.now(), title, completed: false, metadata };
+    const newTodo: Todo = { id: Date.now(), title, completed: false, status: TodoStatus.Pending, metadata };
     todos.push(newTodo);
     return newTodo;
   };
 
-  const updateTodo = (id: number, updates: Partial<Todo>): Todo | undefined => {
+const updateTodo = (id: number, updates: Partial<Todo>): Todo | undefined => {
     const todo = todos.find((t) => t.id === id);
     if (!todo) return undefined; 
   
@@ -26,7 +26,7 @@ const addTodo = (title: string, metadata?: string | object): Todo => {
     return todo;
   };
 
-  const getTodoSummary = (todo: Todo): [string, boolean] => {
+const getTodoSummary = (todo: Todo): [string, boolean] => {
     return [todo.title, todo.completed];
   };
 
@@ -40,15 +40,15 @@ const assignTodoToUser = (todoId: number, userId: number): boolean => {
     return true;
   };
 
-  const getUserTodos = (userId: number): Todo[] => {
+const getUserTodos = (userId: number): Todo[] => {
     return todos.filter((todo) => todo.userId === userId);
   };
 
-  const error = (message: string): never => {
+const error = (message: string): never => {
     throw new Error(message);
   };
 
-  const parseInput = (input: unknown): string => {
+const parseInput = (input: unknown): string => {
     if (typeof input === "string") {
       return input; 
     } 
