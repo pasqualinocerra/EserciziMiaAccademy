@@ -65,3 +65,13 @@ const parseInput = (input: unknown): string => {
     } 
     return error("Input non valido: deve essere una stringa o un numero.");
   };
+
+const user1 = new User(1, "Pasqualino");
+const user2 = new User(2, "Manfredi");
+users.push(user1, user2);
+
+const todo1: Todo = addTodo("");
+const todo2: Todo = addTodo("");
+
+user1.addTodo(todo1);
+user2.addTodo(todo2);
