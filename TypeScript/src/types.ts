@@ -8,20 +8,33 @@ export interface Todo {
   id: number;
   title: string;
   completed: boolean;
-  status: TodoStatus; 
+  status: TodoStatus;
   userId?: number;
   metadata?: string | object;
 }
 
-export interface User {
+export type PartialTodo = Partial<Todo>;  
+
+export class User {
   id: number;
   name: string;
   email?: string;
-  readonly todos: ReadonlyArray<Todo>;
+  todos: Todo[];
+
+  constructor(id: number, name: string, email?: string) {
+    this.id = id;
+    this.name = name;
+    this.email = email;
+    this.todos = [];
+  }
+
+  addTodo(todo: Todo): void {
+    this.todos.push(todo);
+  }
 }
 
 export interface TodoWithMetadata extends Todo {
-  metadata: any;
+  metadata: any;  
 }
 
 export interface Project {
